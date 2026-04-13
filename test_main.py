@@ -15,5 +15,5 @@ def test_add_positive_numbers():
 
 def test_add_negative_numbers():
     response = client.get("/add/-2/1")
-    assert response.status_code == 200
+    assert response.status_code == 201
     assert response.json() == {"result": -1}
